@@ -1,0 +1,16 @@
+seattle_identities.txt
+Building permit IDs, one per line.
+
+seattle_terms.txt
+Terms in the vocabulary, one term per line.
+
+seattle_tfidf.txt
+Each line describes a building permit.
+The first number is 1 if the permit is for single-family/duplex, 2 if this is for multifamily and 0 in all other cases.
+Then pairs of the form index:value follow where index is the line number in seattle_terms.txt where the respective word of the description for the permit appears and value is the (sparse) vector entry for this after passing the set of descriptions to a TFIDF transformation. index:value pairs are separated by spaces.
+
+There is a room for improving on the stemming we applied :)
+
+
+
+
